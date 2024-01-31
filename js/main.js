@@ -1,6 +1,6 @@
 const inputElement = document.getElementById("txttask");
 const sub = document.getElementById("sub");
-const result = document.getElementById("results");
+const results = document.getElementById("results");
 
 sub.addEventListener("click", (e)=>{
     e.preventDefault();
@@ -21,6 +21,17 @@ sub.addEventListener("click", (e)=>{
     listItem.appendChild(addItem);
     listItem.appendChild(doneButton);
     listItem.appendChild(deleteButton);
-    result.appendChild(listItem);
+    results.appendChild(listItem);
+
+    deleteButton.addEventListener("click", ()=> {
+        results.removeChild(listItem)
+    });
+
+    doneButton.addEventListener("click", ()=> {
+        alert("done");
+    });
 
 });
+
+
+
