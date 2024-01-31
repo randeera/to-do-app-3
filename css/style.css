@@ -67,3 +67,15 @@ ul{
     background-color: black;
     color: white;
 }
+
+header{
+
+}
+
+.title{
+    display: flex;
+    margin-top: 0.5em;
+    margin-bottom: 0.5 em;
+    justify-content: center;
+    
+}
